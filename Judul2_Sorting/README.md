@@ -1,3 +1,4 @@
+<img width="992" height="679" alt="Screenshot 2026-05-04 114726" src="https://github.com/user-attachments/assets/cc6df4fe-e759-46b3-90ce-bcc29fd36971" />
 Program Pengurutan Data IPK Mahasiswa Teknik Elektro Menggunakan Metode Bubble Sort
 
 DESKRIPSI SINGKAT:
