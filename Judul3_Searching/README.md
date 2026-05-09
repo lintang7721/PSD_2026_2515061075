@@ -45,4 +45,4 @@ Penjelasan:
 - Masukkan nilai yang ingin dicari frekuensinya: 80  Pada bagian ini program meminta pengguna untuk menginputkan nilai yang ingin dicari kemudian dicek berapa kali kemunculan nilai tersebut, dan pengguna menginputkan nilai 80
 - Hasil: Nilai 80 ditemukan pada 2 mahasiswa Merupakan hasil akhir dari program Sistem Manajemen Data Nilai Mahasiswa. Berdasarkan rumus yang ada program menemukan nilai 80 sebanyak 2 kali oleh karena ini output yang ditampilkan adalah sebagai berikut “Hasil: Nilai 80 ditemukan pada 2 mahasiswa. “.
 
-LINK YOUTUBE:
+LINK YOUTUBE:https://youtu.be/5KKFYo6ENqg?si=5tgIq2U3P81XSl8A
