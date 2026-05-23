@@ -169,8 +169,10 @@ Fungsi Main
 - main() Untuk menjalankan fungsi utama program.
 
 OUTPUT
+
 <img width="924" height="976" alt="Screenshot 2026-05-23 171118" src="https://github.com/user-attachments/assets/07708f53-5113-4de1-8535-1f459d6508ea" />
 <img width="1088" height="978" alt="Screenshot 2026-05-23 171131" src="https://github.com/user-attachments/assets/48271931-5f58-4bab-9f6f-1a519a906200" />
+
 Penjelasan:
 Saat program dijalankan, akan muncul menu utama Kamus Digital BST yang berisi daftar pilihan fitur. Pengguna bisa memilih menu dengan memasukkan angka sesuai kebutuhan. Output ini berfungsi sebagai tampilan utama agar pengguna lebih mudah menjalankan program.
 Pilih: 1 artinya pengguna memilih menu untuk menambahkan kata baru ke dalam kamus. Masukkan kata baru: apel menunjukkan bahwa pengguna memasukkan kata “apel”.Setelah itu muncul tulisan Kata 'apel' berhasil dimasukkan ke kamus yang berarti data berhasil disimpan ke dalam program. Karena kata “apel” adalah data pertama yang dimasukkan, maka kata tersebut otomatis menjadi data utama atau root pada Binary Search Tree (BST).
