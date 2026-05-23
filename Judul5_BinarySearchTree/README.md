@@ -176,8 +176,11 @@ OUTPUT
 Penjelasan:
 Saat program dijalankan, akan muncul menu utama Kamus Digital BST yang berisi daftar pilihan fitur. Pengguna bisa memilih menu dengan memasukkan angka sesuai kebutuhan. Output ini berfungsi sebagai tampilan utama agar pengguna lebih mudah menjalankan program.
 Pilih: 1 artinya pengguna memilih menu untuk menambahkan kata baru ke dalam kamus. Masukkan kata baru: apel menunjukkan bahwa pengguna memasukkan kata “apel”.Setelah itu muncul tulisan Kata 'apel' berhasil dimasukkan ke kamus yang berarti data berhasil disimpan ke dalam program. Karena kata “apel” adalah data pertama yang dimasukkan, maka kata tersebut otomatis menjadi data utama atau root pada Binary Search Tree (BST).
+
 Pilih: 1 berikutnya berarti pengguna kembali memilih menu tambah kata. Masukkan kata baru: mangga menunjukkan bahwa pengguna memasukkan kata “mangga”. Lalu muncul output Kata 'mangga' berhasil dimasukkan ke kamus, berarti kata berhasil ditambahkan ke BST. Program kemudian akan membandingkan kata “mangga” dengan “apel”. Karena huruf “m” lebih besar dari huruf “a”, maka “mangga” diletakkan di cabang kanan dari node “apel”.
+
 Pilih: 3 berarti pengguna memilih menu untuk melihat daftar kata secara urut alfabet menggunakan traversal inorder. Output Daftar Kata Urut Alfabet (Inorder): apel | mangga | menunjukkan bahwa program berhasil menampilkan isi BST secara terurut dari A sampai Z. Kata “apel” tampil lebih dulu karena urutan alfabetnya lebih kecil dibanding “mangga”. 
+
 Pilih: 7 berarti pengguna memilih menu untuk mencari kata terakhir berdasarkan urutan alfabet. Output Kata Terakhir (Max): mangga menunjukkan bahwa kata dengan urutan alfabet paling besar di BST adalah “mangga”. Hal ini karena pada BST, data paling besar selalu berada di bagian paling kanan pohon. Karena “mangga” berada di kanan “apel”, maka “mangga” menjadi nilai maksimum atau kata terakhir.
 
 LINK YOUTUBE: https://youtu.be/geHHEsrxz0k?si=cteas8UBLINYgAAH
