@@ -20,10 +20,12 @@ Class node
 - self.key = key Baris ini digunakan untuk menyimpan data kata yang diterima dari parameter key ke dalam variabel milik object node tersebut.
 - self.left = None Baris ini digunakan untuk membuat cabang kiri node. Nilainya diatur None karena pada awal pembuatan node belum ada node lain yang terhubung di sebelah kiri.
 - self.right = None Baris ini digunakan untuk membuat cabang kanan node. Sama seperti cabang kiri, nilainya masih kosong karena belum ada hubungan ke node lain.
+  
 Class BST dasar
 -class BSTDasar: Baris ini digunakan untuk membuat class utama bernama BSTDasar. Class ini bertugas mengatur seluruh proses pada Binary Search Tree.
 - def __init__(self): Fungsi otomatis ini akan dijalankan saat object BST dibuat pertama kali.
 - self.root = None Baris ini digunakan untuk membuat root atau akar pohon BST. Nilainya masih None karena BST masih kosong dan belum memiliki data.
+  
 Fungsi Insert
 - def insert_node(self, root, key): Fungsi ini merupakan fungsi rekursif yang digunakan untuk mencari posisi yang tepat saat menambahkan kata baru ke dalam BST.
 - if root is None: Baris ini untuk memeriksa apakah posisi node saat ini kosong atau belum memiliki data.
@@ -35,6 +37,7 @@ Fungsi Insert
 - return root Baris ini digunakan untuk mengembalikan node saat ini agar hubungan antar node tetap tersimpan dengan benar.
 - def insert(self, key): Fungsi utama yang dipanggil pengguna untuk menambahkan kata baru ke BST.
 - self.root = self.insert_node(self.root, key) Program memulai proses insert dari root BST lalu menjalankan fungsi rekursif insert_node.
+  
 Fungsi Search
 - def search_node(self, root, key): Fungsi rekursif yang digunakan untuk mencari apakah sebuah kata ada di dalam BST atau tidak.
 - if root is None: Baris ini untuk memeriksa apakah pencarian sudah mencapai node kosong.
@@ -46,6 +49,7 @@ Fungsi Search
 - return self.search_node(root.right, key) Jika tidak lebih kecil, pencarian dilanjutkan ke cabang kanan BST.
 - def search(self, key): Fungsi utama untuk melakukan pencarian kata.
 - return self.search_node(self.root, key) Program memulai pencarian dari root BST.
+  
 Fungsi Traversal
 Traversal Inorder
 - def inorder(self, root): Fungsi ini digunakan untuk menampilkan data BST menggunakan metode Inorder.
@@ -54,6 +58,7 @@ Traversal Inorder
 - self.inorder(root.left) Program menelusuri seluruh cabang kiri terlebih dahulu.
 - print(root.key, end=" | ") Setelah kiri selesai, program mencetak isi node saat ini.
 - self.inorder(root.right)Kemudian program melanjutkan traversal ke cabang kanan.
+  
 Traversal Preorder
 - def preorder(self, root): Fungsi traversal dengan urutan node, kiri, lalu kanan.
 - if root is None: Untuk memeriksa apakah node kosong.
@@ -61,6 +66,7 @@ Traversal Preorder
 - print(root.key, end=" | ") Program akan mencetak node saat ini terlebih dahulu.
 - self.preorder(root.left) Program akan melanjutkan traversal ke kiri.
 - self.preorder(root.right) Pada baris ini traversal dilanjutkan ke kanan.
+  
 Traversal Postorder
 - def postorder(self, root): Fungsi traversal dengan urutan kiri, kanan, lalu node.
 - if root is None: Untuk memeriksa apakah node kosong.
@@ -68,6 +74,7 @@ Traversal Postorder
 - self.postorder(root.left) Pada baris ini program akan enelusuri cabang kiri terlebih dahulu.
 - self.postorder(root.right) Kemudian menelusuri cabang kanan.
 - print(root.key, end=" | ") Node dicetak paling akhir setelah semua cabang selesai diproses.
+  
 Fungsi Statistik
 Fungsi Find Min
 - def find_min(self, root): Fungsi ini digunakan untuk mencari kata paling awal berdasarkan alfabet.
@@ -77,6 +84,7 @@ Fungsi Find Min
 - while current.left is not None: Selama masih ada cabang kiri, program akan terus bergerak ke kiri.
 - current = current.left Untuk memindahkan posisi penelusuran ke node kiri berikutnya.
 - return current.key Mengembalikan kata paling kecil yang berada di ujung kiri BST.
+  
 Fungsi Find Max
 - def find_max(self, root): Fungsi ini digunakan untuk mencari kata paling akhir berdasarkan alfabet.
 - if root is None: Untuk memeriksa apakah BST kosong.
@@ -85,11 +93,13 @@ Fungsi Find Max
 - while current.right is not None: Selama masih ada cabang kanan, program terus bergerak ke kanan.
 - current = current.right Memindahkan posisi penelusuran ke node kanan berikutnya.
 - return current.key Mengembalikan kata paling besar yang berada di ujung kanan BST.
+  
 Fungsi Count Nodes
 - def count_nodes(self, root): Fungsi ini digunakan untuk menghitung jumlah seluruh node dalam BST.
 - if root is None: Untuk memeriksa apakah node kosong.
 - return 0 Jika kosong maka nilainya 0.
 - return 1 + self.count_nodes(root.left) + self.count_nodes(root.right) Untuk menghitung jumlah node dengan rumus: 1 untuk node saat ini kemudian ditambah jumlah node di kiri lalu ditambah jumlah node di kanan
+  
 Fungsi Sum Nodes
 - def sum_nodes(self, root): Fungsi ini digunakan untuk menggabungkan semua kata menjadi satu kalimat panjang.
 - if root is None: Untuk memeriksa apakah node kosong.
@@ -157,3 +167,17 @@ Fungsi Main
 - print("Pilihan tidak valid!") Program akan menampilkan pesan bahwa pilihan menu salah.
 - if __name__ == "__main__": Baris ini akan mengecek apakah file dijalankan langsung.
 - main() Untuk menjalankan fungsi utama program.
+
+OUTPUT
+<img width="924" height="976" alt="Screenshot 2026-05-23 171118" src="https://github.com/user-attachments/assets/07708f53-5113-4de1-8535-1f459d6508ea" />
+<img width="1088" height="978" alt="Screenshot 2026-05-23 171131" src="https://github.com/user-attachments/assets/48271931-5f58-4bab-9f6f-1a519a906200" />
+Penjelasan:
+Saat program dijalankan, akan muncul menu utama Kamus Digital BST yang berisi daftar pilihan fitur. Pengguna bisa memilih menu dengan memasukkan angka sesuai kebutuhan. Output ini berfungsi sebagai tampilan utama agar pengguna lebih mudah menjalankan program.
+Pilih: 1 artinya pengguna memilih menu untuk menambahkan kata baru ke dalam kamus. Masukkan kata baru: apel menunjukkan bahwa pengguna memasukkan kata “apel”.Setelah itu muncul tulisan Kata 'apel' berhasil dimasukkan ke kamus yang berarti data berhasil disimpan ke dalam program. Karena kata “apel” adalah data pertama yang dimasukkan, maka kata tersebut otomatis menjadi data utama atau root pada Binary Search Tree (BST).
+Pilih: 1 berikutnya berarti pengguna kembali memilih menu tambah kata. Masukkan kata baru: mangga menunjukkan bahwa pengguna memasukkan kata “mangga”. Lalu muncul output Kata 'mangga' berhasil dimasukkan ke kamus, berarti kata berhasil ditambahkan ke BST. Program kemudian akan membandingkan kata “mangga” dengan “apel”. Karena huruf “m” lebih besar dari huruf “a”, maka “mangga” diletakkan di cabang kanan dari node “apel”.
+Pilih: 3 berarti pengguna memilih menu untuk melihat daftar kata secara urut alfabet menggunakan traversal inorder. Output Daftar Kata Urut Alfabet (Inorder): apel | mangga | menunjukkan bahwa program berhasil menampilkan isi BST secara terurut dari A sampai Z. Kata “apel” tampil lebih dulu karena urutan alfabetnya lebih kecil dibanding “mangga”. 
+Pilih: 7 berarti pengguna memilih menu untuk mencari kata terakhir berdasarkan urutan alfabet. Output Kata Terakhir (Max): mangga menunjukkan bahwa kata dengan urutan alfabet paling besar di BST adalah “mangga”. Hal ini karena pada BST, data paling besar selalu berada di bagian paling kanan pohon. Karena “mangga” berada di kanan “apel”, maka “mangga” menjadi nilai maksimum atau kata terakhir.
+
+LINK YOUTUBE: https://youtu.be/geHHEsrxz0k?si=cteas8UBLINYgAAH
+
+
