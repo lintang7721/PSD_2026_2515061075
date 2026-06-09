@@ -99,9 +99,9 @@ def main
 -Baris 70: Perintah pengaman khas Python untuk memastikan seluruh instruksi di dalam fungsi main() hanya diaktifkan apabila file skrip ini dieksekusi secara langsung, bukan saat dipanggil oleh file eksternal lain.
 - Baris 71: Menginstruksikan Python untuk mulai memproses fungsi utama program.
 
-
 OUTPUT
 <img width="936" height="828" alt="Screenshot 2026-06-09 220050" src="https://github.com/user-attachments/assets/25c88b55-3114-498f-8808-bc0a319f5bc6" />
+
 Penjelasan
 Pada tampilan awal, sistem menampilkan isi hash table yang berisi data kendaraan yang telah tersimpan. Terlihat bahwa tiket nomor 1, 11, dan 21 berada pada indeks yang sama, yaitu indeks 1. Hal ini terjadi karena ketiga nomor tiket menghasilkan nilai hash yang sama sehingga terjadi collision. Untuk mengatasinya, sistem menyimpan data tersebut dalam bentuk linked list pada indeks yang sama. Sementara itu, tiket nomor 2 tersimpan pada indeks 2 karena memiliki hasil hash yang berbeda.
 
