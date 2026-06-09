@@ -100,6 +100,7 @@ def main
 - Baris 71: Menginstruksikan Python untuk mulai memproses fungsi utama program.
 
 OUTPUT
+
 <img width="936" height="828" alt="Screenshot 2026-06-09 220050" src="https://github.com/user-attachments/assets/25c88b55-3114-498f-8808-bc0a319f5bc6" />
 
 Penjelasan
